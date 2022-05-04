@@ -1,4 +1,4 @@
-*Materials for The HLA-Associated Type-1-Diabetes in World Populations Data Analysis Session at the 18th International HLA & Immunogenetics Workshop*
+# Materials for The HLA-Associated Type-1-Diabetes in World Populations Data Analysis Session at the 18th International HLA & Immunogenetics Workshop
 
 This repository contains materials for the _HLA-Associated Type-1-Diabetes in World Populations_ session at the 2022 18th IHIW Meeting.
 
