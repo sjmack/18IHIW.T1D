@@ -1,7 +1,6 @@
-# 18IHIW.T1D
-Materials for The HLA-Associated Type-1-Diabetes in World Populations Data Analysis Session at the 18th International HLA & Immunogenetics Workshop
+#Materials for The HLA-Associated Type-1-Diabetes in World Populations Data Analysis Session at the 18th International HLA & Immunogenetics Workshop
 
-This repository contains materials for the _HLA-Associated Type-1-Diabetes in World Populations_ session at the 2022 IHIW Meeting.
+This repository contains materials for the _HLA-Associated Type-1-Diabetes in World Populations_ session at the 2022 18th IHIW Meeting.
 
 These materials consist of a dataset for data analysis (DRB1.T1D.Azerbaijan.txt) and an R script (18IHIW.R) for use in the session.
 
