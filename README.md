@@ -23,3 +23,19 @@ Install BIGDAWG in the Rstudio environment by doing the following:
 2. In the popup window, select "Repository (CRAN)" in the "Install from:" menu, and enter "BIGDAWG" in the "Packages (separate multiple with space or comma):" menu.
 3. Click the "Install" button.
 4. Installing BIGDAWG will automatically install all of the other R packages that BIGDAWG requires. This may take a few minutes, and may generate a lot of text in your Rstudio console. This is normal.
+
+---
+# Azerbaijan T1D Dataset
+Analyses of the associated dataset (AZ_18IHIW.txt) were published in [2018 by Ahdamov et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6384092/), as part of a study of Type-1-Diabetes (T1D) in Azerbaijan.
+
+The dataset is a tab-delimtied text file that consists of four columns, *Sample_ID*, *Status*, *DRB1_1* and *DRB1_2*, containing data for 315 individuals, with each line of the file containing all of the data for one individual. 
+
+The 106 Azerbaijani individuals with T1D are indicated by the value of 1 in the *Status* column, and the 209 Azerbaijani individuals without T1D (controls) are indicated by the value of 0 in the *Status* column.
+
+The DRB1 genotypes are represented in two columns, *DRB1_1* and *DRB1_2*, with one two-field DRB1 allele name appearing in each column. 
+
+If genotype data for other loci were available for this dataset, they would appear in other pairs of columns. For example, if DQB1 data were available, the DQB1 allele names for each individual would appear in *DQB1_1* and *DQB1_2* columns.
+
+If HLA genotype data were missing for any individual, the columns for that individual would contain either '****' or 'NA' values.
+
+When analyzing HLA data like these with BIGDAWG, it is important to ensure that there are no extraneous spaces associated with any of the data. Allele names with leading or trailing spaces (' 02:01 ') may be treated as distinct from allele names without any associated spaces ('02:01'). 
