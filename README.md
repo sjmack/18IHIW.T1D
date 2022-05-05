@@ -2,18 +2,18 @@
 
 This repository contains materials for the _HLA-Associated Type-1-Diabetes in World Populations_ session at the 2022 18th IHIW Meeting.
 
-These materials consist of a dataset for data analysis (DRB1.T1D.Azerbaijan.txt) and an R script (18IHIW.R) for use in the session.
+These materials consist of a dataset for data analysis (AZ_18IHIW.txt) and an R script (18IHIW.R) for use in the session.
 
 To use these files, first make a new folder called "18IHIW" in your Documents folder. Then do the following:
 
 Click the green Code button above, and click 'Download ZIP'.
 Unzip the "18IHIW.T1D-main.zip" file in your Downloads folder (either by double-clicking it, or by right-clicking, depending on your system). This will create a new folder called "18IHIW.T1D-main" in your Downloads folder.
-Move the DRB1.T1D.Azerbaijan.txt and 18IHIW.R files in the Downloads/18IHIW.T1D-main folder to your Documents/18IHIW folder.
+Move the AZ_18IHIW.txt and 18IHIW.R files in the Downloads/18IHIW.T1D-main folder to your Documents/18IHIW folder.
 To use these files, Workshop participants should have R, Rstudio, and BIGDAWG installed on their computers.
 
-To install R on your computer, follow the instructions for linux, macOS, or Windows here.
+To install R on your computer, follow the instructions for linux, macOS, or Windows [here](https://cran.r-project.org).
 
-Once R is installed, install Rstudio on your computer using the instructions for your variety of linux, macOS or Windows here.
+Once R is installed, install Rstudio on your computer using the instructions for your variety of linux, macOS or Windows [here](https://www.rstudio.com/products/rstudio/download/).
 
 Once Rstudio has been installed, open Rstudio (by double clicking the icon).
 
