@@ -2,7 +2,7 @@
 ### Demonstration Script for Running BIGDAWG on published Azerbaijani T1D Data (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6384092/)
 
 ## Set the Working Directory
-setwd("~Documents/18IHIW.T1D")
+setwd("Documents/18IHIW.T1D")
 
 ## Load the Azerbaijani data set
 AZ.DRB1 <- read.delim("AZ_18IHIW.txt", stringsAsFactors=FALSE)
