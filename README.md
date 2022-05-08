@@ -10,20 +10,20 @@ Click the green Code button above, and click 'Download ZIP'.
 Unzip the "18IHIW.T1D-main.zip" file in your Downloads folder (either by double-clicking it, or by right-clicking, depending on your system). This will create a new folder called "18IHIW.T1D-main" in your Downloads folder.
 Move the AZ_18IHIW.txt, 18IHIW.R and BDStrat.rda files in the Downloads/18IHIW.T1D-main folder to your Documents/18IHIW folder.
 
-To use these files, Workshop participants should have R, Rstudio, and BIGDAWG installed on their computers.
+To use these files, Workshop participants should have R, Rstudio Desktop, and BIGDAWG installed on their computers.
 
 To install R on your computer, follow the instructions for linux, macOS, or Windows [here](https://cran.r-project.org).
 
-Once R is installed, install Rstudio on your computer using the instructions for your variety of linux, macOS or Windows [here](https://www.rstudio.com/products/rstudio/download/).
+Once R is installed, install Rstudio Desktop on your computer using the instructions for your variety of linux, macOS or Windows [here](https://www.rstudio.com/products/rstudio/download/).
 
-Once Rstudio has been installed, open Rstudio (by double clicking the icon).
+Once Rstudio Desktop has been installed, open Rstudio desktop (by double clicking the icon).
 
-Install BIGDAWG in the Rstudio environment by doing the following:
+Install BIGDAWG in the Rstudio Desktop environment by doing the following:
 
-1. Go to the Tools pulldown menu, and select "Install Packages ...".
+1. Go to the Rstudio Tools pulldown menu (at the top of your screen), and select "Install Packages ...".
 2. In the popup window, select "Repository (CRAN)" in the "Install from:" menu, and enter "BIGDAWG" in the "Packages (separate multiple with space or comma):" menu.
 3. Click the "Install" button.
-4. Installing BIGDAWG will automatically install all of the other R packages that BIGDAWG requires. This may take a few minutes, and may generate a lot of text in your Rstudio console. This is normal.
+4. Installing BIGDAWG will automatically install all of the other R packages that BIGDAWG requires. This may take a few minutes, and may generate a lot of text in your Rstudio console. This is normal. If you are asked 'Do you want to install from sources the package which needs compilation?', enter 'no'.
 
 ---
 # Azerbaijan T1D Dataset
