@@ -1,8 +1,13 @@
 ### 18 IHIW HLA-Associated T1D in World Populations Data Analysis Session -- SJM May 7, 2022
 ### Demonstration Script for Running BIGDAWG on published Azerbaijani T1D Data (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6384092/)
 
-## Set the Working Directory
-setwd("Documents/18IHIW.T1D")
+### Set the Working Directory
+
+## if you are using a Mac/Linux computer
+setwd("Documents/18IHIW.T1D") 
+
+## if you are using a PC
+setwd("Documents\18IHIW.T1D") 
 
 ## Load the Azerbaijani data set
 AZ.DRB1 <- read.delim("AZ_18IHIW.txt", stringsAsFactors=FALSE)
