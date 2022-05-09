@@ -4,10 +4,10 @@
 ### Set the Working Directory
 
 ## if you are using a Mac/Linux computer
-setwd("Documents/18IHIW.T1D") 
+setwd("Documents/18IHIW.T1D")
 
 ## if you are using a PC
-setwd("Documents\18IHIW.T1D") 
+setwd("18IHIW.T1D/") 
 
 ## Load the Azerbaijani data set
 AZ.DRB1 <- read.delim("AZ_18IHIW.txt", stringsAsFactors=FALSE)
@@ -16,6 +16,12 @@ View(AZ.DRB1)
 
 ## Attach BIGDAWG
 library(BIGDAWG)
+
+###################################################################################
+# There is an issue with BIGDAWG under the current version of R (4.2.0).          #
+# So, if you have just installed BIGDAWG for this exercise, skip ahead to lines   #
+# 37-40 below after lines 27 and 35 have been run to follow on your computer.     # 
+###################################################################################
 
 ### Run BIGDAWG at the locus level, and generate a set of output files in your working directory
 BIGDAWG(Data = AZ.DRB1,Run.Tests = "L")
@@ -28,6 +34,11 @@ BIGDAWG(Data = AZ.DRB1,Run.Tests = "L")
 
 AZ.Locus <- BIGDAWG(Data = AZ.DRB1,Run.Tests = "L", Return = TRUE,Output = FALSE)
 
+## IF YOU HAVE NOT BEEN ABLE TO RUN LINES 27 AND 35, RUN LINE 40 BELOW. 
+## IF YOU WERE ABLE TO RUN LINES 27 AND 35, YOU DON'T NEED TO RUN LINE 40.
+
+load("AZ.Locus.rda")
+
 ## Examine the overall locus level of significance evaluated via the chi-squared test. 
 
 View(AZ.Locus$L$Set1$chisq)
@@ -36,8 +47,11 @@ View(AZ.Locus$L$Set1$chisq)
 # threshold of significance for the OR tests for multiple comparisons.
 
 ## Perform a simple Hardy-Weinberg (compared genotypes to those expected based on the allele frequencies) test of the cases and controls
+## IF YOU ARE NOT RUNINING BIGDWG, RUN LINE 54 BELOW.
 
 AZ.HWE <- BIGDAWG(Data = AZ.DRB1,Run.Tests = "HWE", Return = TRUE,Output = FALSE)
+
+load("AZ.Locus.rda")
 
 ## Look at the HWE results for cases and controls 
 AZ.HWE$HWE$cases
@@ -109,9 +123,11 @@ View(AZ.DRB1_0301_stratified$`DRB1_1*03:01-positive`)
 View(AZ.DRB1_0301_stratified$`DRB1_1*03:01-negative`)
 
 ## Run BIGDAWG on the 03:01-negative stratum
-
+## IF YOU ARE NOT RUNINING BIGDWG, RUN LINE 129 BELOW.
 AZ.DRB1_0301_negative <- BIGDAWG(Data = AZ.DRB1_0301_stratified$`DRB1_1*03:01-negative`,Run.Tests = "L", Return = TRUE,Output = FALSE)
+
+load("AZ.DRB1_0301_negative.rda")
 
 View(AZ.DRB1_0301_negative$L$Set1$OR)
 
-## You can apply the approach above to examine and generate tables from the AZ.DRB1_0301_negative object
+## You can apply the approach as described above in lines 62-105 to examine and generate tables from the AZ.DRB1_0301_negative object

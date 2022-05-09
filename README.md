@@ -2,15 +2,18 @@
 
 This repository contains materials for the _HLA-Associated Type-1-Diabetes in World Populations_ session at the 2022 18th IHIW Meeting.
 
-These materials consist of a data set for data analysis (AZ_18IHIW.txt), an R script (18IHIW.R) and an R Data File (BDStrat.rda) for use in the session.
+These materials consist of a data set for data analysis (AZ_18IHIW.txt), an R script (18IHIW.R) and four R Data Files (AZ.Locus.rda, AZ.HWE.rda, AZ.DRB1_0301_negative.rda and BDStrat.rda) for use in the session.
 
 To use these files, first make a new folder called "18IHIW" in your Documents folder. Then do the following:
 
 Click the green Code button above, and click 'Download ZIP'.
-Unzip the "18IHIW.T1D-main.zip" file in your Downloads folder (either by double-clicking it, or by right-clicking, depending on your system). This will create a new folder called "18IHIW.T1D-main" in your Downloads folder.
-Move the AZ_18IHIW.txt, 18IHIW.R and BDStrat.rda files in the Downloads/18IHIW.T1D-main folder to your Documents/18IHIW folder.
+Unzip the "18IHIW.T1D-main.zip" file in your Downloads folder (either by double-clicking it, or by right-clicking, depending on your operating system). This will create a new folder called "18IHIW.T1D-main" in your Downloads folder.
+Move the AZ_18IHIW.txt, 18IHIW.R, AZ.Locus.rda, AZ.HWE.rda, AZ.DRB1_0301_negative.rda and BDStrat.rda files in the Downloads/18IHIW.T1D-main folder to your Documents/18IHIW folder.
 
 To use these files, Workshop participants should have R, Rstudio Desktop, and BIGDAWG installed on their computers.
+
+**However, there is an issue with BIGDAWG in the current version if R (v4.2.0). If you have just (or recently) installed R and R studio, you will not need to run _BIGDAWG_.**
+**Instead, you can use the AZ.Locus.rda, AZ.HWE.rda and AZ.DRB1_0301_negative.rda BIGDAWG output objects bundled with this repository.**
 
 To install R on your computer, follow the instructions for linux, macOS, or Windows [here](https://cran.r-project.org).
 
